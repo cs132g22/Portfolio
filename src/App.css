@@ -1,8 +1,9 @@
 :root{
-  --fg:#231F20;
-  --bg:#EAEAEA;
-  --c1:#8e793e;
-  --c2:#ad974f;
+  --fg:#293241;
+  --bg:#e0fbfc;
+  --c1:#3d5a80;
+  --c2:#98c1d9 ;
+  --c3:#ee6c4d;
 }
 .App {
   text-align: center;
@@ -16,6 +17,7 @@
   pointer-events: none;
 }
 .Nvbr{
+  z-index: 100 ;
   position:fixed;
   top:0px;
   width:100%;
@@ -101,7 +103,41 @@
   }
   
 
-
+.card{
+  height: 50vh;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.front,
+.back{
+  height:100%;
+  width:100%;
+  transform-style: preserve-3d;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position:absolute;
+  top:0;
+  bottom:0;
+  backface-visibility: hidden;
+  border-radius: 0.5em;
+}
+.front{
+  background: linear-gradient(to right,var(--c2),var(--bg));
+  z-index: 10;
+}
+.front img{
+  height:50%;
+}
+.back{
+  background: var(--fg);
+  color:var(--bg);
+  transform:rotateX(180deg);
+}
+.con:hover .card{
+  transform:rotateX(180deg);
+} 
 .left{
   grid-column:1/4;
   display: block;

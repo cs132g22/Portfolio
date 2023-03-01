@@ -6,6 +6,7 @@ import MediaQuery from 'react-responsive';
 import mlogo from './mainlogo.png';
 import './App.css';
 import './fonts/tiltwarp.ttf';
+import motivate from './motivate.png';
 function App() {
   return (
     <div className="App">
@@ -90,7 +91,20 @@ function App() {
           
           </div>
         </div>
-        <div className="bcontainer"><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p></div>
+        <div className="bcontainer"><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p>
+          <div className="con">
+            <div className='card'>
+              <div className="front">
+                <br/>
+                <img src={motivate} alt=''/><br/>
+                  Motivation
+              </div>
+              <div className="back"> 
+                lorem ipsumjaslfksjalkjzcxlkvjlkase fasdlfjlsdkaf
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="bcontainer">3</div>
         <div className="bcontainer">4</div>
         <div className="bcontainer">5</div>
