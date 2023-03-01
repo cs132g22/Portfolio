@@ -3,13 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import MediaQuery from 'react-responsive';
+import mlogo from './mainlogo.png';
 import './App.css';
+import './fonts/tiltwarp.ttf';
 function App() {
   return (
     <div className="App">
       <title>PH Twitter Misinformation-Disinformation</title>
       <div className="Nvbr">
-      <MediaQuery minWidth={480}>  
+      <MediaQuery minWidth={720}>  
         <Navbar class="Main">
           <Container>
             <Navbar.Brand href="#home">Group 22</Navbar.Brand>
@@ -36,7 +38,7 @@ function App() {
           </Container>
         </Navbar>
       </MediaQuery>
-      <MediaQuery maxWidth={479}>
+      <MediaQuery maxWidth={719}>
       <Navbar collapseOnSelect expand="lg">
       <Navbar.Brand href="#home">
         Group 22
@@ -68,8 +70,27 @@ function App() {
       </MediaQuery>
       </div>
       <div className='body'>
-        <div className="bcontainer">1</div>
-        <div className="bcontainer">2</div>
+        <div className="bcontainer top1">
+          <div className='left'>
+                <img src={mlogo} className="leftimg" alt="vectorjuice on Freepik"/>
+          </div>
+          <div className='right'>
+            <h1>Hi. We are Group 22</h1>
+          <p>This is our Project titled,<b>PH Twitter Misinformation-Disinformation</b>. SPecifically di ko pa alam ilalagay 
+          pero yeah alam namn na natin if ever. Feel ko </p>
+         <span>
+          <h5>
+              <strong>Data Science Team</strong></h5>
+            <p>
+              Reannu Instrella,<br/>
+              Roenz Timbol,<br/>
+              John David Vidad, WFW<br/>
+              </p>
+              </span>
+          
+          </div>
+        </div>
+        <div className="bcontainer"><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p></div>
         <div className="bcontainer">3</div>
         <div className="bcontainer">4</div>
         <div className="bcontainer">5</div>
