@@ -92,18 +92,47 @@ function App() {
           </div>
         </div>
         <div className="bcontainer"><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p>
-          <div className="con">
-            <div className='card'>
-              <div className="front">
-                <br/>
-                <img src={motivate} alt=''/><br/>
+          <div className="cards"><div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+              <img src={motivate} alt=''/><br/>
                   Motivation
               </div>
-              <div className="back"> 
-                lorem ipsumjaslfksjalkjzcxlkvjlkase fasdlfjlsdkaf
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
               </div>
             </div>
           </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+              <img src={motivate} alt=''/><br/>
+                  Motivation
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+              <img src={motivate} alt=''/><br/>
+                  Motivation
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+          </div>
+           
         </div>
         <div className="bcontainer">3</div>
         <div className="bcontainer">4</div>

@@ -21,7 +21,11 @@
   position:fixed;
   top:0px;
   width:100%;
-  background-color: var(--c1);
+  background-color: var(--c2);
+  color:var(--bg);
+}
+.Nvbr Nav.Item{
+  color:var(--bg);
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -45,24 +49,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .Main{
   background:var(--c1);
+  color: var(--bg);
 }
-
+Nav{
+  color:var(--bg);
+}
   @media screen and (min-width:720px) {
     .container{
       margin-left:5%;
     }
     .bcontainer{
-    padding:0 15% 0 15%;
+    padding:0 10% 5% 10%;
     min-height: 30vh;
     }
     .top1{
@@ -103,41 +102,7 @@
   }
   
 
-.card{
-  height: 50vh;
-  width: 100%;
-  transition: 0.5s ease;
-}
-.front,
-.back{
-  height:100%;
-  width:100%;
-  transform-style: preserve-3d;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position:absolute;
-  top:0;
-  bottom:0;
-  backface-visibility: hidden;
-  border-radius: 0.5em;
-}
-.front{
-  background: linear-gradient(to right,var(--c2),var(--bg));
-  z-index: 10;
-}
-.front img{
-  height:50%;
-}
-.back{
-  background: var(--fg);
-  color:var(--bg);
-  transform:rotateX(180deg);
-}
-.con:hover .card{
-  transform:rotateX(180deg);
-} 
+
 .left{
   grid-column:1/4;
   display: block;
@@ -149,6 +114,7 @@
 }
 Container{
   background:rgba(0,0,0,0);
+  color:var(--bg);
 }
 .body{
   padding-top: 10vh;
@@ -158,5 +124,66 @@ Container{
 }
 h1{
   font-family: 'TiltWarp';
+}
+/* Flip card from w3 school*/
+.flip-card {
+  background-color: transparent;
+  height: 100%; 
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  min-width: 200px;
+  grid-row: 1/3;
+  min-height: 20vh;
+  margin:0 5% 0 0;
+  width:50%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  border-radius: 0.5em;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  padding-top:10%;
+  
+}
+.flip-card-front {
+  background:var(--c1);
+  color: black;
+}
+.flip-card-front img{
+  height: 50%;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--c2);
+  color: white;
+  transform: rotateX(180deg);
+}
+.cards{
+  height:25vw;
+  display: flex;  
+  overflow: hidden;
+  min-height: 20vh;
+  margin:auto;
 }
 @import 'bootstrap/dist/css/bootstrap.min.css'
