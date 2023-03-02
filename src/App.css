@@ -61,7 +61,7 @@ Nav{
       margin-left:5%;
     }
     .bcontainer{
-    padding:0 10% 5% 10%;
+    padding:5% 10% 5% 10%;
     min-height: 30vh;
     }
     .top1{
@@ -81,6 +81,9 @@ Nav{
   .leftimg{
     width:100%;
   }
+  .section{
+    display:flex;
+  }
   }
   @media screen and (max-width:719px) {
     .bcontainer{
@@ -99,25 +102,39 @@ Nav{
     .leftimg{
       width:100%;
     }
+    .cards{
+      overflow-x: scroll;
+      overflow-y:hidden ;
+    }
   }
-  
+Link>.active {
+    border-bottom: 1px solid #333;
+}
+.viewer{
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x:scroll ;
+  width:100%;
+}
 
+.section{
+  scroll-snap-align: start;
+  height:100%;
+  width: 100%;
+  min-width: 720px;
+}
 
 .left{
-  grid-column:1/4;
   display: block;
   margin: auto;
-  
+  flex: 33%;
 }
 .right{
-  grid-column: span 3/4;
+  flex: 67%;
 }
 Container{
   background:rgba(0,0,0,0);
   color:var(--bg);
-}
-.body{
-  padding-top: 10vh;
 }
 .bcontainer{
   border-bottom: 2px solid rgb(184, 176, 176);
@@ -178,11 +195,13 @@ h1{
   background-color: var(--c2);
   color: white;
   transform: rotateX(180deg);
+  align-items: center;
 }
+
 .cards{
   height:25vw;
   display: flex;  
-  overflow: hidden;
+  
   min-height: 20vh;
   margin:auto;
 }
