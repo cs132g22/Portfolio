@@ -97,7 +97,7 @@ ol{
   border-left: 4px solid var(--fg);
   border-right: 4px solid var(--fg);
   background-color: var(--c2);
-  min-height: 70vh;
+  min-height: 60vh;
 }
 .tab-content .information{
   text-align: left;
@@ -119,6 +119,7 @@ p a,p a:link,p a:visited{
   background-color:var(--c4);
   padding:2%;
   min-width: 10vw;
+  min-height: 25vh;
 }
 .work p{
   height: 60%;

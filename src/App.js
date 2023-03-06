@@ -10,6 +10,8 @@ import { useScrollPosition } from './scroller';
 import log0 from './logo.png';
 import Tabs from './components/tabs';
 import Vidad from './utils/vidad.png';
+import Instrella from './utils/placeholder.jpg';
+import Timbol from './utils/placeholder.jpg';
 function App() {
   const scrollPos=useScrollPosition();
   console.log(window.innerHeight);
@@ -150,10 +152,44 @@ function App() {
           <div className='selection'></div>
           <Tabs>
         <div label="Instrella">
-          See ya later, <em>Alligator</em>!
+        <div className='information'>
+            <h1>REANNU INSTRELLA</h1>
+            <h5>CS 132, Tagavalidate ng data</h5>
+            <p>
+              enter any info here <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer">flutter</a> and react.js.
+              <br/>Some of my Works are as listed<br/>
+              <div className='Works'>
+                <div className='work'><h6>WORK TITLE</h6>
+                  <p>short description</p>
+                  <a href='#' target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                {/*add more div work if needed, up to 3 only */}
+              </div>
+              
+            </p>
+          </div>
+          <div className='pic'><img src={Instrella} alt=''/><br/><a href="mailto:#">Contact me</a>
+          </div>
         </div>
         <div label="Timbol">
-          After 'while, <em>Crocodile</em>!
+        <div className='information'>
+            <h1>JOSH TIMBOL</h1>
+            <h5>CS 132, Tagahanap ng tweet</h5>
+            <p>
+              enter any info here <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer">flutter</a> and react.js.
+              <br/>Some of my Works are as listed<br/>
+              <div className='Works'>
+                <div className='work'><h6>WORK TITLE</h6>
+                  <p>short description</p>
+                  <a href='#' target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                {/*add more div work if needed, up to 3 only */}
+              </div>
+              
+            </p>
+          </div>
+          <div className='pic'><img src={Timbol} alt=''/><br/><a href="mailto:jdvidad31@gmail.com">Contact me</a>
+          </div>
         </div>
         <div label="Vidad">
           <div className='information'>
