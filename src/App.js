@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import MediaQuery from 'react-responsive';
-import mlogo from './mainlogo.png';
+import mlogo from './utils/LOGS.png';
 import './fonts/tiltwarp.ttf';
 import motivate from './motivate.png';
 import prob from './problem.png';
 import sol from './solution.png';
 import { useScrollPosition } from './scroller';
 import log0 from './logo.png';
+import Tabs from './components/tabs';
+import Vidad from './utils/vidad.png';
 function App() {
   const scrollPos=useScrollPosition();
   console.log(window.innerHeight);
@@ -143,8 +145,52 @@ function App() {
         <div className="bcontainer" id='section4'><h1>Ganito naman Ginawa namin para makuha yung datus</h1>
         <p> yep wala pa, wala pa kami nagagawa</p></div>
         <div className="bcontainer" id='section5'><h1> Ang resulta</h1><p> Syempre wala pa wala pa nga naggawa diba</p></div>
-        <div className="bcontainer" id='section6'><h1> may tanong ba sa amin?</h1><p>
-          di pa namn masasagot kasi wala rin kami alam diyan</p></div>
+        <div className="bcontainer" id='section6'><h1> Meet the Team</h1>
+        <div className="folder">
+          <div className='selection'></div>
+          <Tabs>
+        <div label="Instrella">
+          See ya later, <em>Alligator</em>!
+        </div>
+        <div label="Timbol">
+          After 'while, <em>Crocodile</em>!
+        </div>
+        <div label="Vidad">
+          <div className='information'>
+            <h1>JOHN DAVID A. VIDAD</h1>
+            <h5>CS 132 WFW, Portfolio Manager</h5>
+            <p>
+              I am a currently a fourth year Computer Science undergraduate student.
+              I enjoy programming, biking, volleyball, and basketball. I am currently
+              studying <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer">flutter</a> and react.js.
+              <br/>Some of my Works are as listed<br/>
+              <div className='Works'>
+                <div className='work'><h6>LEDS CRUD App</h6>
+                  <p>CRUD Application using VB.Net for a printing shop in Ilocos Norte Called
+                  LEDS Ilocos.</p>
+                  <a href='https://github.com/anagramiccoder/LEDS' target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                
+                <div className='work'><h6>VOTER'S PORTAL</h6>
+                  <p>A Web App for Voters to check their respective precinct and schedule
+                      when they want to vote. This was a Group Project</p>
+                  <a href='https://github.com/cs192-VotersPortal/voter-portal' target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div className='work'><h6>STACK CALCULATOR</h6>
+                  <p>A simple Calculator that can do stack calculation. (This was made during my 9th grade)</p>
+                  <a href='https://github.com/cs192-VotersPortal/voter-portal' target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+              </div>
+              
+              
+            </p>
+          </div>
+          <div className='pic'><img src={Vidad} alt=''/><br/><a href="mailto:jdvidad31@gmail.com">Contact me</a>
+          </div>
+        </div>
+      </Tabs>
+        </div>
+        </div>
       </div>
   );
 }

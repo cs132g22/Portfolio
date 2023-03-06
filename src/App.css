@@ -1,9 +1,10 @@
 :root{
   --fg:#293241;
-  --bg:#e0fbfc;
-  --c1:#7564c5;
-  --c2:#e1dee9 ;
-  --c3:#b6a6ca;
+  --bg:#eae6df;
+  --c1:#6e7376;
+  --c2:#dbd4c1;
+  --c3:#e4d5c8;
+  --c4:#b0b0b0;
 }
 .App {
   text-align: center;
@@ -37,16 +38,124 @@
   background:var(--c1);
   color: var(--bg);
 }
-Nav{
-  color:var(--bg);
+h6{
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+
+.pic a,.pic a:link,.pic a:visited{
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+  background-color: var(--fg);
+  color: var(--c2);
+  text-align: center;
+  border-radius: 5%;
+  padding:2% ;
+  font-size: 0.9vw;
+  margin-top: 3vw;
+}
+.navigation img{
+  height: 100%;
+}
+/*for about page*/
+.tab-list {
+  border-bottom: 4px solid var(--fg);
+  padding-left: 0;
+  display: flex;
+  flex-wrap:wrap-reverse;
+  margin-left: auto;
+  color:var(--c2); 
+}
+ol{
+  margin: 0;
+}
+.tab-list-item {
+  list-style: none;
+  margin-bottom: 0px;
+  padding: 0.5rem 0.75rem;
+  background-color:var(--c1);
+  border-radius: 30% 0% 0% 0%;
+}
+
+.tab-list-active {
+  
+  margin-bottom: -4px;
+  background-color: var(--c2);
+  border: solid var(--fg);
+  border-width: 4px 4px 0 4px;
+  color:var(--fg);
+  
+}
+.tab-list li{
+  cursor: default;
+}
+
+.tab-content{
+  border-bottom: 4px solid var(--fg);
+  border-left: 4px solid var(--fg);
+  border-right: 4px solid var(--fg);
+  background-color: var(--c2);
+  min-height: 70vh;
+}
+.tab-content .information{
+  text-align: left;
+  padding: 2%;
+  position: relative;
+}
+p a,p a:link,p a:visited{
+  color:black;
+}
+.Works{
+  display: flex;
+  justify-content: space-evenly ;
+  margin-bottom: 2vw;
+}
+.work{
+  border: 2px solid var(--c1);
+  border-radius: 5% 5%;
+  flex:0.25;
+  background-color:var(--c4);
+  padding:2%;
+  min-width: 10vw;
+}
+.work p{
+  height: 60%;
+  font-size: 0.9vw;
+  
+}
+.work a,.work a:link,.work a:visited{
+  text-decoration: none;
+  display: block;
+  background-color:var(--c1);
+  position: relative;
+  bottom:0;
+  color:var(--c2);
+  padding: 1%;
+    font-size: 0.9vw;
+  text-align: center;
+}
+
+.pic img{
+  width: 70%;
+  border-radius: 10%;
+  margin-bottom: 2vw;
 }
   @media screen and (min-width:720px) {
+    .pic{
+      flex:0.4;
+      height: 100%;
+      margin: auto;
+    }
     .show{
       display: block;
       width: 19vw;
       margin: auto;
+      height: 100%;
     }
     .no-show{
+      width: 19vw;
       display: none;
     }
     .navigation{
@@ -57,7 +166,7 @@ Nav{
       top:0vh;
       z-index: 100;
       background-color: var(--c1);
-      color:var(--c2);
+      color:white;
       margin:0;
       vertical-align: middle;
       text-align: center;
@@ -69,7 +178,7 @@ Nav{
     }
     .navigation a:link,a:visited{
       text-decoration: none;
-      color: var(--c2);
+      color: white;
       margin: auto;
     }
     .top1{
@@ -79,7 +188,10 @@ Nav{
       display:flex;
       margin:0;
       background-color: var(--c1);
-      color:var(--c2);
+      color:white;
+    }
+    .top1 h1{
+      font-size:8vh;
     }
     .container{
       margin-left:5%;
@@ -107,7 +219,12 @@ Nav{
   .section{
     display:flex;
   }
-
+  .tab-content{
+    display: flex;
+  }
+  .tab-content .information{
+    flex:0.7;
+  }
   }
   @media screen and (max-width:719px) {
     .bcontainer{
@@ -169,7 +286,6 @@ h1{
 .flip-card {
   background-color: transparent;
   height: 100%; 
-  border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   min-width: 200px;
   grid-row: 1/3;
@@ -211,7 +327,7 @@ h1{
   
 }
 .flip-card-front {
-  background:var(--c1);
+  background:var(--c4);
   color: black;
 }
 .flip-card-front img{
@@ -219,7 +335,7 @@ h1{
 }
 /* Style the back side */
 .flip-card-back {
-  background-color: var(--c3);
+  background-color: var(--c2);
   color:var(--fg);
   transform: rotateX(180deg);
   align-items: center;
@@ -232,5 +348,7 @@ h1{
   min-height: 20vh;
   margin:auto;
 }
+
+
 
 @import 'bootstrap/dist/css/bootstrap.min.css'
