@@ -1,10 +1,7 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import './App.css';
 import MediaQuery from 'react-responsive';
 import mlogo from './mainlogo.png';
-import './App.css';
 import './fonts/tiltwarp.ttf';
 import motivate from './motivate.png';
 import prob from './problem.png';
@@ -12,67 +9,39 @@ import sol from './solution.png';
 function App() {
   return (
     <div className="App">
-      <title>PH Twitter Misinformation-Disinformation</title>
-      <div className="Nvbr">
-      <MediaQuery minWidth={720}>  
-        <Navbar class="Main">
-          <Container>
-            <Navbar.Brand href="#home">Group 22</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Item>
-              <Nav.Link href="#section1">Top</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section2">Overview</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section3">Data</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section4">Methods</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section5">Results</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section6">Team</Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Container>
-        </Navbar>
-      </MediaQuery>
-      <MediaQuery maxWidth={719}>
-      <Navbar collapseOnSelect expand="lg">
-      <Navbar.Brand href="#home">
-        Group 22
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-        <Nav.Item>
-              <Nav.Link href="#section1">Top</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section2">Overview</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section3">Data</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section4">Methods</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section5">Results</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="#section6">Team</Nav.Link>
-              </Nav.Item>
-        </Nav>
-        </Navbar.Collapse>
-        </Navbar>
-      </MediaQuery>
-      </div>
-      <div className='body'>
+        <MediaQuery minWidth={720}>
+        <div className="top1" id='section1'>
+          <div className='left'>
+                <img src={mlogo} className="leftimg" alt="vectorjuice on Freepik"/>
+          </div>
+          <div className='right'>
+            <h1>Hi. We are Group 22</h1>
+          <p>This is our Project titled,<b>PH Twitter Misinformation-Disinformation</b>. SPecifically di ko pa alam ilalagay 
+          pero yeah alam namn na natin if ever. Feel ko </p>
+         <span>
+          <h5>
+              <strong>Data Science Team</strong></h5>
+            <p>
+              Reannu Instrella,<br/>
+              Roenz Timbol,<br/>
+              John David Vidad, WFW<br/>
+              </p>
+              </span>
+          
+          </div>
+        </div>
+        <div className="navigation">
+          <div className='area'>
+              <a href="#section1">Top</a>
+              <a href="#section2">Overview</a>
+              <a href="#section3">Data</a>
+              <a href="#section4">Methodology</a>
+              <a href="#section5">Results</a>
+              <a href="#section6">About</a>
+            </div>
+        </div>
+        </MediaQuery>
+        <MediaQuery maxWidth={719}>
         <div className="bcontainer top1" id='section1'>
           <div className='left'>
                 <img src={mlogo} className="leftimg" alt="vectorjuice on Freepik"/>
@@ -93,6 +62,7 @@ function App() {
           
           </div>
         </div>
+        </MediaQuery>
         <div className="bcontainer" id='section2'><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p>
           <div className="cards"><div class="flip-card">
             <div class="flip-card-inner">
@@ -170,7 +140,6 @@ function App() {
         <div className="bcontainer" id='section6'><h1> may tanong ba sa amin?</h1><p>
           di pa namn masasagot kasi wala rin kami alam diyan</p></div>
       </div>
-    </div>
   );
 }
 
