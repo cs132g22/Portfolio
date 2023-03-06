@@ -41,6 +41,14 @@ Nav{
   color:var(--bg);
 }
   @media screen and (min-width:720px) {
+    .show{
+      display: block;
+      width: 19vw;
+      margin: auto;
+    }
+    .no-show{
+      display: none;
+    }
     .navigation{
       width: 100%;
       height:8vh;

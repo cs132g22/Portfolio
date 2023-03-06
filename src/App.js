@@ -6,7 +6,10 @@ import './fonts/tiltwarp.ttf';
 import motivate from './motivate.png';
 import prob from './problem.png';
 import sol from './solution.png';
+import { useScrollPosition } from './scroller';
+import classNames from 'classnames';
 function App() {
+  const scrollPos=useScrollPosition();
   return (
     <div className="App">
         <MediaQuery minWidth={720}>
@@ -31,6 +34,7 @@ function App() {
           </div>
         </div>
         <div className="navigation">
+          <div className={scrollPos>(9*window.innerHeight/10)? "show":"no-show"}>LOGO HERE</div>
           <div className='area'>
               <a href="#section1">Top</a>
               <a href="#section2">Overview</a>
@@ -39,6 +43,7 @@ function App() {
               <a href="#section5">Results</a>
               <a href="#section6">About</a>
             </div>
+            <div className={scrollPos>(9*window.innerHeight/10)? "show":"no-show"}></div>
         </div>
         </MediaQuery>
         <MediaQuery maxWidth={719}>
@@ -64,24 +69,24 @@ function App() {
         </div>
         </MediaQuery>
         <div className="bcontainer" id='section2'><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p>
-          <div className="cards"><div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="cards"><div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
               <img src={motivate} alt=''/><br/>
                   Motivation
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <p>Pasensya, di kami motivated, grades lang to (jk)</p>
               </div>
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
               <img src={prob} alt=''/><br/>
                   Problem
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <p>
                   Here is our problem, maraming fake news ganun,
                   di ko sure bat naging problema pa namin eh
@@ -89,13 +94,13 @@ function App() {
               </div>
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
               <img src={sol} alt=''/><br/>
                   Solution
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <p> Solusyon eh mag track lang ng mga tweets ganun, diba.
                   mas mabilis kasi kumuha ng eto lang tas ganun, hanap lang ng data,
                 </p>
@@ -108,19 +113,19 @@ function App() {
         <div className="bcontainer" id='section3'>
           <h1>So Naging minero kami ng datus</h1>
           <div className='viewer'>
-            <div class="section">
+            <div className="section">
               <div className='left'>
                 left
               </div>
               <div className='right'>right</div>
             </div>
-            <div class="section">
+            <div className="section">
               <div className='left'>
                 TOPIC
               </div>
               <div className='right'>Diba undecidable pa haha di pa alam kung ano final topic</div>
             </div>
-            <div class="section">
+            <div className="section">
               <div className='left'>
                 KEYWORDS
               </div>
