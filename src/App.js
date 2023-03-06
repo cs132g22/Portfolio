@@ -10,6 +10,7 @@ import { useScrollPosition } from './scroller';
 import log0 from './logo.png';
 function App() {
   const scrollPos=useScrollPosition();
+  console.log(window.innerHeight);
   return (
     <div className="App">
         <MediaQuery minWidth={720}>
