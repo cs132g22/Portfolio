@@ -7,7 +7,7 @@ import motivate from './motivate.png';
 import prob from './problem.png';
 import sol from './solution.png';
 import { useScrollPosition } from './scroller';
-import classNames from 'classnames';
+import log0 from './logo.png';
 function App() {
   const scrollPos=useScrollPosition();
   return (
@@ -34,7 +34,7 @@ function App() {
           </div>
         </div>
         <div className="navigation">
-          <div className={scrollPos>(9*window.innerHeight/10)? "show":"no-show"}>LOGO HERE</div>
+          <div className={scrollPos>(9*window.innerHeight/10)? "show":"no-show"}><img src={log0} alt=''/></div>
           <div className='area'>
               <a href="#section1">Top</a>
               <a href="#section2">Overview</a>
