@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f7bb66a0.css",
-    "main.js": "/Portfolio/static/js/main.0e03878c.js",
+    "main.js": "/Portfolio/static/js/main.4628d04f.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/vidad.png": "/Portfolio/static/media/vidad.adef86c550acacc1b5f3.png",
     "static/media/inter.ttf": "/Portfolio/static/media/inter.aadb65ac45347ff46699.ttf",
     "static/media/tiltwarp.ttf": "/Portfolio/static/media/tiltwarp.eb0f4127f0363e1b22e4.ttf",
     "static/media/LOGS.png": "/Portfolio/static/media/LOGS.9655724e44b6f9bbfbcd.png",
     "static/media/placeholder.jpg": "/Portfolio/static/media/placeholder.bc91dcb7793a52f6e44f.jpg",
+    "static/media/logoorig.png": "/Portfolio/static/media/logoorig.67a44d834c8b7eaaa295.png",
     "static/media/solution.png": "/Portfolio/static/media/solution.d873e7ae15e59ac4ab00.png",
     "static/media/question.png": "/Portfolio/static/media/question.60d88dbe5146e695de52.png",
     "static/media/problem.png": "/Portfolio/static/media/problem.bb93825c54382e6ae4f3.png",
     "static/media/motivate.png": "/Portfolio/static/media/motivate.7a77d3849311e8f45307.png",
     "index.html": "/Portfolio/index.html",
     "main.f7bb66a0.css.map": "/Portfolio/static/css/main.f7bb66a0.css.map",
-    "main.0e03878c.js.map": "/Portfolio/static/js/main.0e03878c.js.map",
+    "main.4628d04f.js.map": "/Portfolio/static/js/main.4628d04f.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7bb66a0.css",
-    "static/js/main.0e03878c.js"
+    "static/js/main.4628d04f.js"
   ]
 }
