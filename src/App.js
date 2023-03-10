@@ -9,6 +9,7 @@ import sol from './solution.png';
 import { useScrollPosition } from './scroller';
 import log0 from './logo.png';
 import Tabs from './components/tabs';
+import hypo from './question.png';
 import Vidad from './utils/vidad.png';
 import Instrella from './utils/placeholder.jpg';
 import Timbol from './utils/placeholder.jpg';
@@ -73,28 +74,27 @@ function App() {
           </div>
         </div>
         </MediaQuery>
-        <div className="bcontainer" id='section2'><h1>This is What it is all About</h1><p>so project namin ganito ganyan</p>
+        <div className="bcontainer" id='section2'><h1>This is What it is all About</h1><p>Our project aims to tackle Mis-information/Dis-information about anti-terror bill</p>
           <div className="cards"><div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
               <img src={motivate} alt=''/><br/>
-                  Motivation
+                  Research Question
               </div>
               <div className="flip-card-back">
-                <p>Pasensya, di kami motivated, grades lang to (jk)</p>
+                <p>What are the prominent topics misconceptions, if any, regarding anti-terror bill/act/law?</p>
               </div>
             </div>
           </div>
           <div className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-              <img src={prob} alt=''/><br/>
-                  Problem
+              <img src={hypo} alt=''/><br/>
+                  Hypothesis
               </div>
               <div className="flip-card-back">
                 <p>
-                  Here is our problem, maraming fake news ganun,
-                  di ko sure bat naging problema pa namin eh
+                Communist groups are prominent topic of misconception and misinformation for anti-terror bill/act/law
                 </p>
               </div>
             </div>
@@ -103,11 +103,23 @@ function App() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
               <img src={sol} alt=''/><br/>
-                  Solution
+                  Null Hypothesis
               </div>
               <div className="flip-card-back">
-                <p> Solusyon eh mag track lang ng mga tweets ganun, diba.
-                  mas mabilis kasi kumuha ng eto lang tas ganun, hanap lang ng data,
+                <p> There is no prominent topic of misconception and misinformation for anti-terror bill/act/law
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+              <img src={prob} alt=''/><br/>
+                    Action Plan
+              </div>
+              <div className="flip-card-back">
+                <p>
+                Analyze tweets posting mis/disinformation about PH anti-terror bill/act/law
                 </p>
               </div>
             </div>
