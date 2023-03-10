@@ -7,12 +7,12 @@ import motivate from './motivate.png';
 import prob from './problem.png';
 import sol from './solution.png';
 import { useScrollPosition } from './scroller';
-import log0 from './logo.png';
 import Tabs from './components/tabs';
 import hypo from './question.png';
 import Vidad from './utils/vidad.png';
 import Instrella from './utils/placeholder.jpg';
 import Timbol from './utils/placeholder.jpg';
+import rirtdv from './logoorig.png';
 function App() {
   const scrollPos=useScrollPosition();
   console.log(window.innerHeight);
@@ -40,7 +40,7 @@ function App() {
           </div>
         </div>
         <div className="navigation">
-          <div className={scrollPos>(9*window.innerHeight/10)? "show":"no-show"}><img src={log0} alt=''/></div>
+          <div className={scrollPos>(9*window.innerHeight/10)? "show":"no-show"}><img src={rirtdv} alt=''/></div>
           <div className='area'>
               <a href="#section1">Top</a>
               <a href="#section2">Overview</a>
