@@ -74,3 +74,109 @@ a{
 	z-index: 1200;
 	transition: width 0.3s;
 }
+
+
+.tab-list {
+	border-bottom: 4px solid var(--fg);
+	padding-left: 0;
+	display: flex;
+	margin-left: auto;
+	color:var(--c7); 
+  }
+  ol{
+	margin: 0;
+  }
+  .tab-list-item {
+	list-style: none;
+	margin-bottom: 0px;
+	padding: 0.5rem 0.75rem;
+	background-color:var(--c1);
+	border-radius: 30% 0% 0% 0%;
+  }
+  
+  .tab-list-active {
+	
+	margin-bottom: -4px;
+	background-color: var(--c2);
+	border: solid var(--fg);
+	border-width: 4px 4px 0 4px;
+	color:var(--c7);
+	
+  }
+  .tab-list li{
+	cursor: default;
+  }
+  
+  .tab-content{
+	border-bottom: 4px solid var(--fg);
+	border-left: 4px solid var(--fg);
+	border-right: 4px solid var(--fg);
+	background-color: var(--c2);
+	min-height: 60vh;
+  }
+  .tab-content .information{
+	text-align: left;
+	padding: 2%;
+	position: relative;
+  }
+  p a,p a:link,p a:visited{
+	color:var(--c2);
+  }
+  .Works{
+	display: flex;
+	justify-content: space-evenly ;
+	margin-bottom: 2vw;
+  }
+  .work{
+	border: 2px solid var(--c1);
+	border-radius: 5% 5%;
+	flex:0.25;
+	background-color:var(--c4);
+	padding:2%;
+	min-width: 10vw;
+	min-height: 25vh;
+  }
+  .work p{
+	height: 60%;
+	font-size: 0.9vw;
+	
+  }
+  .work a,.work a:link,.work a:visited{
+	text-decoration: none;
+	display: block;
+	background-color:var(--c1);
+	position: relative;
+	bottom:0;
+	color:var(--c2);
+	padding: 1%;
+	  font-size: 0.9vw;
+	text-align: center;
+  }
+  .apic{
+	margin: auto;
+  }
+  .apic img{
+	width: 20vw;
+	border-radius: 10%;
+	margin-bottom: 2vw;
+  }
+  .right{
+    text-align: left;
+    padding-left: 5vh;
+    margin:auto;
+    flex: 40%;
+  }
+  .leftimg{
+    width:100%;
+  }
+  .tab-content{
+    display: flex;
+  }
+  .tab-content .information{
+    flex:0.7;
+  }
+  .tabs{
+	width: 80vw;
+	align-self: center;
+	padding-left: 10vw;
+  }
