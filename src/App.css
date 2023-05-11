@@ -1,88 +1,89 @@
-:root{
- --c1:#262e23;
- --c2:#14191d;
- --c3:#8a0303;
- --c4:#660008;
- --c5:#40050e;
- --c6:#070707;
- --c7:rgb(255, 255, 255);
+@import "bootstrap/dist/css/bootstrap.min.css";
+:root {
+  --c1: #262e23;
+  --c2: #14191d;
+  --c3: #8a0303;
+  --c4: #660008;
+  --c5: #40050e;
+  --c6: #070707;
+  --c7: rgb(255, 255, 255);
 }
-.section{
+.section {
   height: 100vh;
   font-size: 2.5vmin;
   width: 100vw;
   padding: 1vmin;
 }
-.black{
+.black {
   background-color: var(--c6);
-  color:var(--c7);
+  color: var(--c7);
 }
-.btn-red{
+.btn-red {
   background-color: var(--c5);
-  color:var(--c7);
+  color: var(--c7);
 }
-.pic{
-  background-image: url('./components/bg.jpg');
+.pic {
+  background-image: url("./components/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: var(--c7);
 }
-.pic2{
-  background-image: url('./components/bg1.jpg');
+.pic2 {
+  background-image: url("./components/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: var(--c7);
 }
-.pic3{
-  background-image: url('./components/war.jpg');
+.pic3 {
+  background-image: url("./components/war.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: var(--c7);
 }
-.translucent{
-  background-color: rgba(0,0,0,0.4);
+.translucent {
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.top{
-  display:flex;
+.top {
+  display: flex;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-.top img{
+.top img {
   width: 100%;
 }
-.top .left{
-  width:40%;
+.top .left {
+  width: 40%;
   margin: auto;
 }
-.top .right{
+.top .right {
   margin: auto;
-  width:60%;
+  width: 60%;
 }
-h2{
+h2 {
   font-size: 10vmin;
-  font-family: 'TiltWarp';
+  font-family: "TiltWarp";
 }
-.span{
+.span {
   padding-right: 20vmin;
 }
-.title{
+.title {
   width: 100%;
   text-align: center;
 }
 /* overview exclusive */
-.cards{
+.cards {
   width: 80%;
   display: flex;
   margin: auto;
 }
-.card{
+.card {
   width: 50%;
   height: 50vmin;
   margin-top: 10%;
@@ -92,15 +93,14 @@ h2{
   padding: 1vmin;
   padding-top: 10vmin;
 }
-.card h5{
+.card h5 {
   font-weight: bold;
   align-self: center;
   font-size: 4vmin;
 }
-.card img{
+.card img {
   width: 15vmin;
   position: absolute;
-  top:-15%;
+  top: -15%;
   align-self: center;
 }
-@import 'bootstrap/dist/css/bootstrap.min.css'
