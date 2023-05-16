@@ -1,0 +1,28 @@
+
+.but, .but:visited{
+    width: max(71px,50%);
+    aspect-ratio: 1/1;
+    margin:auto;
+    background-color: transparent;
+    border: 0.2em solid white;
+    color:white;
+    border-radius: 10%;
+    outline:none;
+    font-size:max(12px,1.5vw);
+
+  }
+  .but img{
+    width:50%;
+
+  }
+  .partial{
+    display:flex;
+    padding-top: 1em;
+    width: 100%;
+  }
+  .partial *{
+    margin:0.5em;
+  }
+  .right{
+    align-items: right;
+  }

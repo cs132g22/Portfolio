@@ -6,7 +6,7 @@ import Instrella from "../utils/placeholder.jpg";
 import "../components/component.css";
 function About() {
   return (
-    <div className="black section" id="about">
+    <div className="black section" id="About">
       <div className="title">
         <h2>About</h2>
       </div>

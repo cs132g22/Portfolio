@@ -1,6 +1,6 @@
 function Methodology() {
   return (
-    <div className="black section" id="method">
+    <div className="black section" id="Method">
       <div className="title">
         <h2>Methodology</h2>
       </div>

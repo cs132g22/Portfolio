@@ -1,6 +1,6 @@
 function Data() {
   return (
-    <div className="pic2 section">
+    <div className="pic2 section" id="Data">
       <div className="title">
         <h2>Data</h2>
       </div>
