@@ -4,13 +4,23 @@ import { Bar } from "react-chartjs-2";
 
 const BarChart = (props) => {
   return (
-    <div className="charts">
+    <div className={props.class_name}>
       {props.Title}
-      <Bar data={props.data} width={"10%"} height={"10%"} options={{ maintainAspectRatio:false,
-      indexAxis:"y", scaleShowValues: true,
+      <Bar data={props.data} width={"10%"}  options={{ maintainAspectRatio:false,
+      indexAxis:props.orie, scaleShowValues: true,
       barPercentage:0.5,
       scales:{
-        y:{beginAtZero:true}
+        y:{beginAtZero:true},
+        xAxes: [{
+          ticks: {
+            autoSkip: false
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            autoSkip: false
+          }
+        }]
       }
       
     }}  />

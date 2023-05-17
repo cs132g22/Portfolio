@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import dataimg from "../components/data.png";
 import "./section.css";
 import BarChart from "./barchart";
-import { columnValues} from "../components/data";
+import { columnValues, tweetType,uniqueAuthors} from "../components/data";
 function Data() {
   const [openModal, setOpenModal] = useState(false);
   const handleClose = () => setOpenModal(false);
   const filteredColumns=columnValues.filter(obj=>obj.Count>0);
-  const data = {
+  const missingData = {
     labels: filteredColumns.map((obj)=>{return obj.Column}),
     datasets: [
       {
@@ -18,6 +18,30 @@ function Data() {
         borderColor: "rgb(255, 255, 132)",
         borderWidth:1,
         data: filteredColumns.map((obj)=>{return obj.Count}),
+      },
+    ],
+  };
+  const tweetTypeData = {
+    labels: tweetType.map((obj)=>{return obj["Tweet Type"]}),
+    datasets: [
+      {
+        label: "Tweets",
+        backgroundColor: ["red","yellow"],
+        borderColor: "rgb(255, 255, 132)",
+        borderWidth:1,
+        data: tweetType.map((obj)=>{return obj.Count}),
+      },
+    ],
+  };
+  const uniqueAuthorData = {
+    labels: uniqueAuthors.map((obj)=>{return obj.Author}),
+    datasets: [
+      {
+        label: "Tweets",
+        backgroundColor: ["red","yellow"],
+        borderColor: "rgb(255, 255, 132)",
+        borderWidth:1,
+        data: uniqueAuthors.map((obj)=>{return obj.Count}),
       },
     ],
   };
@@ -60,7 +84,7 @@ The tweets we have collected have no missing values for the attributes that are 
 
           </p>
           <div className="divider">
-          {/* <BarChart data={data} Title="Missing Data Graph" /> */}
+          <BarChart data={missingData} Title="Missing Data Graph" orie="y" class_name="charts"/>
           <div className="text">
           <p>
           Handling missing values/ensuring no missing values
@@ -95,9 +119,6 @@ Quote Tweets<br/>
 Tweet Location being easily spoofed and is not present in all accounts can be disregarded during our data exploration. The column for views is not relevant and thus is filtered away along with submission-specific columns for data collection from Rating to Review.
 </p></div>
           </div>
-          <div className="divider">
-
-          </div>
         </div>
         <div className="subsubsection"><h3>2. Categorical Data Encoding</h3><p>Since our question involves comparing interactions between tweets that do and do not contain misinformation, we used Label encoding to categorize tweets as 0 for tweets without misinfo, and 1 for tweets containing misinfo. We tabulated the encoding for each category manually as we initially tabulated each category in separate spreadsheets.</p></div>
         <div className="subsubsection">
@@ -126,12 +147,21 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
           <div className="subsubsection">
             <h3></h3>
           </div>
-          <div className="subsubsection">
+          <div className=" divider subsubsection">
+            <div>
             <h3>Frequency of Tweet</h3>
-            a
+            <BarChart data={tweetTypeData} Title="Tweet Type Graph" orie="y"  class_name="charts"/><br/>
+            </div>
+            <p className="text">
+            We also looked at the frequency of tweet types. From the graph below, we can see that there is Text for all the tweets we collected. Next is reply with 60 which means that 60% of the tweets with misinformation we collected are replies to another tweet. Images are present in 32% of tweets.
+            </p>
           </div>
           <div className="subsubsection">
-            
+            <div className="text">
+              <h3>Unique Authors</h3>
+              <p>From the dataset, there are 63 unique authors in the list with @todongpnoy and @dTnalakRiderSR taking up the spot for the most tweets in our dataset with 9 tweets each.</p>
+            </div>
+            <BarChart data={uniqueAuthorData} Title="Authors" orie="x"  class_name="fullcharts"/>
           </div>
           <div className="subsubsection">
             

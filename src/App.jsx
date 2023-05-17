@@ -2,7 +2,7 @@ import { useRef } from "react";
 import "./App.css";
 import MediaQuery from "react-responsive";
 import "./fonts/tiltwarp.ttf";
-
+import React from 'react';  
 import Top from "./sections/Top";
 import About from "./sections/About";
 import Data from "./sections/Data";
@@ -12,7 +12,7 @@ import Results from "./sections/Results";
 import Sidebar from "./components/Sidebar";
 function App() {
   return (
-    <div>asfdskj</div>
+    <div>Hello World</div>
   );
 }
 

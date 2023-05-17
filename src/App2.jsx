@@ -3,10 +3,11 @@ import "./App2.css";
 import MediaQuery from "react-responsive";
 import "./fonts/tiltwarp.ttf";
 import topimg from "./components/top.png";
-// import About from "./NewSection/About";
-// import Methodology from "./NewSection/Methodology";
-// import Overview from "./NewSection/Overview";
-// import Results from "./NewSection/Results";
+import About from "./NewSection/About";
+import Methodology from "./NewSection/Methodology";
+import Overview from "./NewSection/Overview";
+import Results from "./NewSection/Results";
+import Data from "./NewSection/Data";
 function App() {
   return (
     <MediaQuery orientation="landscape" min-width={720}>
@@ -35,12 +36,12 @@ function App() {
             
           </div>
         </div>
-        {/* <div className="lower">
+        <div className="lower">
           <section>
           <Overview/>
           </section>
           <section>
-          
+          <Data/>
           </section>
           <section>
           <Methodology/>
@@ -51,7 +52,7 @@ function App() {
           <section>
           <About/>
           </section>
-        </div> */}
+        </div>
       </div>
     </MediaQuery>
   );
