@@ -170,7 +170,7 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
           <div className="minimized-table">
             <center>
             <DateScaleTable/>
-            <a href="https://romantic-area-46a.notion.site/25bb5e6075134a02b3ad66fb804b8752?v=e1140798de054fac8d8e1b814c25f00c" target="_blank"><button className="expand">Expand Table</button></a>
+            <a href="https://romantic-area-46a.notion.site/Scaling-of-Dates-866d8a4b1c154901b060e450ad9d6bbc" target="_blank"><button className="expand">Expand Table</button></a>
             </center></div>
             For a bulkier and lesser precise binning, scaling per month is considered to count the number of tweets, and its likes, replies and retweet in that period of time, which will be shown in the visualization later on.
         </div>
@@ -195,7 +195,7 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
             <div className="minimized-table">
             <center>
             <NLPTSLTable/>
-            <a href="https://romantic-area-46a.notion.site/ec7b33d365f0433980359589529dd3fd?v=48cde78aeca7463686785bd5f30c1361" target="_blank"><button className="expand">Expand Table</button></a>
+            <a href="https://romantic-area-46a.notion.site/6dc2eb2891474fd7a8130963389b0586?v=d47a8132bb174a0eac4d61c4e60f9318" target="_blank"><button className="expand">Expand Table</button></a>
             </center></div>
           </div>
           Here are the Most commonly used Words in the Tweets (minimzed into top 5)
@@ -203,7 +203,7 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
           <div className="minimized-table">
             <center>
             <CommonWordsTable/>
-            <a href="https://romantic-area-46a.notion.site/bb23d8e38b794477a8aeae7d4753c2cb?v=061a07ac327043e49241ec516e37cc38" target="_blank"><button className="expand">Expand Table</button></a>
+            <a href="https://romantic-area-46a.notion.site/Most-Common-Words-caa0f8f45d934f7c99b0f6581f5efb0e" target="_blank"><button className="expand">Expand Table</button></a>
             </center></div>
         </div>
 
@@ -252,7 +252,8 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
           <div className="minimized-table">
             <center>
             <HashtagsCountTable/>
-            <a href="https://romantic-area-46a.notion.site/d71cb175c8774efab340c95e79038246?v=01428cc57cfa4089a3dc9c6ca0c478e4" target="_blank"><button className="expand">Expand Table</button></a>
+            <a href="
+https://romantic-area-46a.notion.site/Frequency-of-Hashtags-659e31494f884cd3a365e50cafba28cd" target="_blank"><button className="expand">Expand Table</button></a>
             </center></div>
         </div>
       </PersonalModal>
