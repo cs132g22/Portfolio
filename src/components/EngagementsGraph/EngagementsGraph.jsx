@@ -96,20 +96,20 @@ const EngagementsGraph = () => {
     ],
   };
   const [data, setData] = useState(likesData);
-  const [title, setTitle] = useState("Likes Over Time");
+  const [title, setTitle] = useState("Likes Over Time Line Graph");
   function handleEngagementChange(e) {
     if (e.target.value === "Likes") {
       setData(likesData);
-      setTitle("Likes Over Time");
+      setTitle("Likes Over Time Line Graph");
     } else if (e.target.value === "Replies") {
       setData(repliesData);
-      setTitle("Replies Over Time");
+      setTitle("Replies Over Time Line Graph");
     } else if (e.target.value === "Retweets") {
       setData(retweetsData);
-      setTitle("Retweets Over Time");
+      setTitle("Retweets Over Time Line Graph");
     } else if (e.target.value === "Quote Tweets") {
       setData(quotesData);
-      setTitle("Quote Tweets Over Time");
+      setTitle("Quote Tweets Over Time Line Graph");
     }
   }
 
@@ -129,6 +129,11 @@ const EngagementsGraph = () => {
         <Line
           data={data}
           options={{
+            plugins:{
+              legend:{
+                display:false,
+              }
+            },
             scales: {
               y: { title: { display: true, text: "Counts" } },
               x: { title: { display: true, text: "Months" } },

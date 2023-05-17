@@ -8,9 +8,17 @@ const BarChart = (props) => {
       {props.Title}
       <Bar data={props.data} width={"10%"}  options={{ maintainAspectRatio:false,
       indexAxis:props.orie, scaleShowValues: true,
+      plugins:{legend: {
+        display: false
+    },},
       barPercentage:0.9,
       scales:{
-        y:{beginAtZero:true},
+        y:{beginAtZero:true,
+          title:{
+            display:true,
+            text:props.ylabel
+          }
+        },
         xAxes: [{
           ticks: {
             autoSkip: false
@@ -20,7 +28,13 @@ const BarChart = (props) => {
           ticks: {
             autoSkip: false
           }
-        }]
+        }],
+        x:{
+          title:{
+            display:true,
+            text:props.xlabel
+          }
+        }
       }
       
     }}  />

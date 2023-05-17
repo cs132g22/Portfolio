@@ -61,6 +61,7 @@ function Data() {
     datasets: [
       {
         label: "Tweets",
+        
         backgroundColor: background,
         borderColor:border,
         borderWidth:1,
@@ -105,7 +106,7 @@ The tweets we have collected have no missing values for the attributes that are 
 
           </p>
           <div className="divider">
-          <BarChart data={missingData} Title="Missing Data Bar Graph" orie="y" class_name="charts"/>
+          <BarChart data={missingData} Title="Missing Data Bar Graph" orie="y" class_name="charts" xlabel="# of tweets" ylabel="Column"/>
           <div className="text">
           <p>
           Handling missing values/ensuring no missing values
@@ -215,7 +216,7 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
           <div className=" divider subsubsection">
             <div>
             <h3>Frequency of Tweet</h3>
-            <BarChart data={tweetTypeData} Title="Tweet Type Bar Graph" orie="y"  class_name="charts"/><br/>
+            <BarChart data={tweetTypeData} Title="Tweet Type Bar Graph" orie="y"  class_name="charts" xlabel="# of Tweets" ylabel="Tweet Type"/><br/>
             </div>
             <p className="text">
             We also looked at the frequency of tweet types. From the graph below, we can see that there is Text for all the tweets we collected. Next is reply with 60 which means that 60% of the tweets with misinformation we collected are replies to another tweet. Images are present in 32% of tweets.
@@ -227,7 +228,7 @@ Tweet Location being easily spoofed and is not present in all accounts can be di
               <p>From the dataset, there are 63 unique authors in the list with @todongpnoy and @dTnalakRiderSR taking up the spot for the most tweets in our dataset with 9 tweets each.</p>
             </div>
             <div className="x-scrollable">
-            <BarChart data={uniqueAuthorData} Title="Authors vs Tweets Bar Graph" orie="x"  class_name="fullcharts"/></div>
+            <BarChart data={uniqueAuthorData} Title="Authors vs Tweets Bar Graph" orie="x"  class_name="fullcharts" xlabel="account Handle" ylabel="#of Tweets"/></div>
           </div>
           <div className="subsubsection">
             <h3>Tweets per Month</h3>

@@ -12,11 +12,10 @@ const ScatterDate=()=>{
     }
     return(<>
         <center>
-            Tweets per Month Scatter Plot
             <Scatter data={data} options={{scaleShowValues: true,
             plugins:{
-                title:{display:true},
-                text:"Tweet per Month Scatter Plot"
+                title:{display:true,text:"Tweet per Month Scatter Plot"},
+                legend:{display:false}
             },
             scales:{
                 y:{

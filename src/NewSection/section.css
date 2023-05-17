@@ -37,6 +37,7 @@
     width: 100dvw;
     height:60dvh;
     margin:1%;
+    padding-bottom: 2%;
   }
   .title{
     background-color: inherit;

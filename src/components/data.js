@@ -29,12 +29,6 @@ export const columnValues = [
   { Column: "Views", Count: 100 },
   { Column: "Rating", Count: 20 },
   { Column: "Reasoning", Count: 0 },
-  { Column: "Remarks", Count: 100 },
-  { Column: "Add columns here", Count: 100 },
-  { Column: "Add columns here.1", Count: 100 },
-  { Column: "Add columns here.2", Count: 100 },
-  { Column: "Reviewer", Count: 100 },
-  { Column: "Review", Count: 100 },
   { Column: "Tweet with Misinfo", Count: 0 },
 ];
 
