@@ -26,3 +26,47 @@
   .right{
     align-items: right;
   }
+  .charts{
+    border:1px dotted red;
+    width: 30dvw;
+    height:60dvh;
+    margin:1%
+  }
+  .title{
+    background-color: black;
+    position:absolute;
+    top:0;
+  }
+  .divider{
+    display:flex;
+  }
+  .text{
+    margin:auto;
+  }
+  .subsection{
+    border:3px solid red;
+    margin:1%;  
+    padding: 1%;
+    border-radius: 1vw;
+  }
+  .subsubsection{
+    border:2px solid pink;
+    margin:1%;  
+    padding: 1%;
+    border-radius: 1vw;
+  }
+  .subsubsubsection{
+    border:2px solid pink;
+    margin:1%;  
+    padding: 1%;
+    border-radius: 1vw;
+  }
+  .flexbox{
+    display:flex;
+    margin:1%;
+    margin-right: 3%;
+    padding-right: 2%;
+  }
+  .flexbox div{
+    flex:33%;
+  }

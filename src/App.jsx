@@ -12,17 +12,7 @@ import Results from "./sections/Results";
 import Sidebar from "./components/Sidebar";
 function App() {
   return (
-    <MediaQuery orientation="landscape" min-width={720}>
-      <div className="viewport">
-        <Top />
-        <Overview />
-        <Data />
-        <Methodology />
-        <Results />
-        <About />
-        <Sidebar />
-      </div>
-    </MediaQuery>
+    <div>asfdskj</div>
   );
 }
 
