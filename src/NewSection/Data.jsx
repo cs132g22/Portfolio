@@ -61,10 +61,8 @@ function Data() {
           Data
         </motion.button>
       </center>
-      <Modal open={openModal} close={handleClose}>
-        <div className="title">
-          <h2>Data</h2>
-        </div>
+      <Modal open={openModal} close={handleClose} extraclass="inverse">
+        
         <div className="subsection">
           <h2>Data Retrieval</h2>
           <p>

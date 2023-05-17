@@ -47,7 +47,7 @@ export const Modal=(props)=>{
                 exit={{
                     scale:0
                 }}
-                className="modal-content-wrapper">
+                className={props.extraclass+" "+"modal-content-wrapper"}>
                     <motion.div 
                     className="modal-content"
                     initial={{

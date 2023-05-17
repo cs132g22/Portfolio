@@ -39,7 +39,7 @@
     margin:1%;
   }
   .title{
-    background-color: black;
+    background-color: inherit;
     position:absolute;
     top:0;
   }
@@ -50,12 +50,14 @@
   .text{
     margin:auto;
     padding: 2%;
+    color:inherit
   }
   .subsection{
     border:3px solid red;
     margin:1%;  
     padding: 1%;
     border-radius: 1vw;
+    color:black;
   }
   .subsubsection{
     border:2px solid pink;

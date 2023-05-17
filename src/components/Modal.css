@@ -16,6 +16,10 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
+.inverse{
+    background-color:lightgrey;
+    color:black;
+}
 .modal-content .title{
     position:sticky;
     top:0;
