@@ -5,6 +5,9 @@ import { Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import dataimg from "../components/data.png";
+import heatmap from "../components/heatmap.png";
+import threeD1 from "../components/3d-1.png";
+import threeD2 from "../components/3d-2.png";
 import "./section.css";
 import BarChart from "./barchart";
 import { columnValues, tweetType, uniqueAuthors } from "../components/data";
@@ -429,7 +432,7 @@ function Data() {
               retweets.
             </p>
             <center>
-              <img src="src/components/heatmap.png" alt="heatmap" />
+              <img src={heatmap} alt="heatmap" />
             </center>
           </div>
         </div>
@@ -454,6 +457,30 @@ https://romantic-area-46a.notion.site/Frequency-of-Hashtags-659e31494f884cd3a365
               >
                 <button className="expand">Expand Table</button>
               </a>
+            </center>
+          </div>
+        </div>
+        <div className="subsection">
+          <h2>Miscellaneous</h2>
+          <div className="subsection">
+            <h2>3D Scatterplot</h2>
+            <p>
+              From the correlation heat map, the coefficient of spearman
+              correlation between likes and replies are the least. To show a
+              small demonstration with the tweet distribution over the mth month
+              starting at January 2020 as first where m ranges from 1 to 36, a
+              3D scatterplot is used. As shown earlier, the two personal tweets
+              from Ping Lacson stood out as from the rest of the dataset,
+              provided that those were outliers with respect to like and reply
+              counts, while the rest are not as large, not even the media type
+              of tweets that do contain misinformation.
+            </p>
+            <center>
+              <img src={threeD1} alt="3D Scatterplot 1" />
+            </center>
+            <br />
+            <center>
+              <img src={threeD2} alt="3D Scatterplot 2" />
             </center>
           </div>
         </div>
