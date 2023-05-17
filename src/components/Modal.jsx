@@ -1,7 +1,7 @@
 import { motion, AnimatePresence} from "framer-motion";
 import { useEffect } from "react";
 import "./Modal.css"
-export const Modal=(props)=>{
+export const PersonalModal=(props)=>{
     useEffect(() => {
         const keyDownHandler = event => {
           if (event.key === 'Escape') {

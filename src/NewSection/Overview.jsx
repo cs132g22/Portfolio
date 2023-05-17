@@ -4,10 +4,10 @@ import Question from "../components/research.png";
 import Null from "../components/null.png";
 import ov from "../components/overview.png";
 import { motion } from "framer-motion";
-import { Modal } from "../components/Modal";
+import { PersonalModal } from "../components/Modal";
 import React, {useState} from "react";
 import "./section.css";
-function Overview() {
+const Overview=(props)=> {
   const [openModal, setOpenModal] = useState(false);
 const handleClose=()=>setOpenModal(false);
   return (
@@ -17,7 +17,7 @@ const handleClose=()=>setOpenModal(false);
     whileHover={{ scale: [null, 1.3, 1.15] }}
     transition={{ duration: 0.15}}
     onClick={()=>{setOpenModal(true)}} className="but"><img src={ov} alt='overview'/>Overview</motion.button></center>
-    <Modal open={openModal} close={handleClose}>
+    <PersonalModal open={openModal} close={handleClose}>
       <div className="title">
         <h2>Overview</h2>
       </div>
@@ -102,7 +102,7 @@ const handleClose=()=>setOpenModal(false);
             <img src={motivate} alt="" />
           </motion.div>
       </div>
-    </Modal></>
+    </PersonalModal></>
   );
 }
 export default Overview;

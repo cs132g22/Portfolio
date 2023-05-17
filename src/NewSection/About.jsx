@@ -6,7 +6,7 @@ import Instrella from "../utils/placeholder.jpg";
 import abt from "../components/about.png";
 import "../components/component.css";
 import { motion } from "framer-motion";
-import { Modal } from "../components/Modal";
+import { PersonalModal } from "../components/Modal";
 import React, {useState} from "react";
 import "./section.css";
 function About() {
@@ -19,7 +19,7 @@ function About() {
       whileHover={{ scale: [null, 1.3, 1.15] }}
       transition={{ duration: 0.15}}
       onClick={()=>{setOpenModal(true)}} className="but"><img src={abt} alt='about'/><br/>About</motion.button></center>
-     <Modal open={openModal} close={handleClose}>
+     <PersonalModal open={openModal} close={handleClose}>
     <div>
       <div className="title">
         <h2>About</h2>
@@ -170,7 +170,7 @@ function About() {
       </Tabs>
       <Sources />
     </div>
-    </Modal>
+    </PersonalModal>
     </>
   );
 }

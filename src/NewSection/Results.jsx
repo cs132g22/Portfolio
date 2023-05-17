@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Modal } from "../components/Modal";
+import { PersonalModal } from "../components/Modal";
 import React, {useState} from "react";
 import res from "../components/results.png"
 import "./section.css";
@@ -13,7 +13,7 @@ const handleClose=()=>setOpenModal(false);
     whileHover={{ scale: [null, 1.3, 1.15] }}
     transition={{ duration: 0.15}}
     onClick={()=>{setOpenModal(true)}} className="but"><img src={res} alt='results'/><br/>Results</motion.button></center>
-   <Modal open={openModal} close={handleClose}>
+   <PersonalModal open={openModal} close={handleClose}>
     <div>
       <div>
         <h2>Results</h2>
@@ -22,7 +22,7 @@ const handleClose=()=>setOpenModal(false);
         <h2>Coming Soon</h2>
       </center>
     </div>
-    </Modal></>
+    </PersonalModal></>
   );
 }
 export default Results;

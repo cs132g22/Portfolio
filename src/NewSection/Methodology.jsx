@@ -1,4 +1,4 @@
-import { Modal } from "../components/Modal";
+import { PersonalModal } from "../components/Modal";
 import React, {useState} from "react";
 import met from "../components/method.png";
 import { motion } from "framer-motion";
@@ -13,14 +13,14 @@ const handleClose=()=>setOpenModal(false);
     whileHover={{ scale: [null, 1.3, 1.15] }}
     transition={{ duration: 0.15}}
     onClick={()=>{setOpenModal(true)}} className="but"><img src={met} alt='methods'/><br/>Methods</motion.button></center>
-   <Modal open={openModal} close={handleClose}>
+   <PersonalModal open={openModal} close={handleClose}>
    <div className="title">
         <h2>Methodology</h2>
       </div>
       <center>
         <h2>Coming Soon</h2>
       </center>
-   </Modal>
+   </PersonalModal>
    </>
   );
 }

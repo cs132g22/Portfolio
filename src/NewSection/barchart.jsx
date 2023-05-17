@@ -8,7 +8,7 @@ const BarChart = (props) => {
       {props.Title}
       <Bar data={props.data} width={"10%"}  options={{ maintainAspectRatio:false,
       indexAxis:props.orie, scaleShowValues: true,
-      barPercentage:0.5,
+      barPercentage:0.9,
       scales:{
         y:{beginAtZero:true},
         xAxes: [{

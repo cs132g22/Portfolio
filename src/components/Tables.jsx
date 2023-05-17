@@ -16,7 +16,7 @@ export function DateScaleTable() {
           <th>Epoch</th>
           <th>Original Date Posted</th>
         </tr>
-        {epochConverted.map((row) => (
+        {epochConverted.slice(0,4).map((row) => (
           <tr>
             <td>{row["Original date posted"]}</td>
             <td>{row.Epoch}</td>
@@ -36,7 +36,7 @@ export function TranslatedTweetsTable() {
           <th>Google Translated</th>
           <th>Manually Translated</th>
         </tr>
-        {translatedTweets.map((row) => (
+        {translatedTweets.slice(0,4).map((row) => (
           <tr>
             <td>{row["Original Text"]}</td>
             <td>{row["Manual Translated"]}</td>
@@ -56,7 +56,7 @@ export function CommonWordsTable() {
           <th>Word</th>
           <th>Count</th>
         </tr>
-        {commonWords.map((row) => (
+        {commonWords.slice(0,5).map((row) => (
           <tr>
             <td>{row.Word}</td>
             <td>{row.Count}</td>
@@ -77,12 +77,12 @@ export function NLPTSLTable() {
           <th>Stemmed</th>
           <th>Lemmatized</th>
         </tr>
-        {nlpTSL.map((row) => (
+        {nlpTSL.slice(0,2).map((row) => (
           <tr>
             <td>{row["Original"]}</td>
             <td>{row["Tokenized"]}</td>
-            <td>{row["Stemmed"]}</td>
-            <td>{row["Lemmatized"]}</td>
+            <td>{row["Stemmed"].join(", ")}</td>
+            <td>{row["Lemmatized"].join(", ")}</td>
           </tr>
         ))}
       </table>
@@ -98,7 +98,7 @@ export function HashtagsCountTable() {
           <th>Hashtag</th>
           <th>Count</th>
         </tr>
-        {hashtags.map((row) => (
+        {hashtags.slice(0,5).map((row) => (
           <tr>
             <td>{row.Hashtag}</td>
             <td>{row.Count}</td>

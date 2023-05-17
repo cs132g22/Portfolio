@@ -68,7 +68,7 @@
     overflow-y: hidden;
   }
   .subsubsubsection{
-    border:2px solid pink;
+    border:2px solid gray;
     margin:1%;  
     padding: 1%;
     border-radius: 1vw;
@@ -81,4 +81,29 @@
   }
   .flexbox div{
     flex:33%;
+  }
+  .x-scrollable{
+    width:100%;
+    overflow-x:auto ;
+    overflow-y: hidden;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+  th, td{
+    word-wrap: break-word;
+    max-width: 20dvw;
+    min-width: 10vw;
+  }
+  .expand{
+    background-color: rgba(54, 162, 235, 0.5);
+    border:0.2 em solid white;
+    outline:none;
+    margin:4px;
+  }
+  .minimized-table{
+    overflow-y: hidden;
+    overflow-x: auto;
   }
