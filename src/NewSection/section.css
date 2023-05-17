@@ -27,7 +27,7 @@
     align-items: right;
   }
   .charts{
-    border:1px dotted red;
+    /* border:1px dotted red; */
     width: 30dvw;
     height:60dvh;
     margin:1%
@@ -53,14 +53,14 @@
     color:inherit
   }
   .subsection{
-    border:3px solid red;
+    border:3px solid black;
     margin:1%;  
     padding: 1%;
     border-radius: 1vw;
     color:black;
   }
   .subsubsection{
-    border:2px solid pink;
+    border:2px solid black;
     margin:1%;  
     padding: 1%;
     border-radius: 1vw;

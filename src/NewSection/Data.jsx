@@ -6,6 +6,24 @@ import "./section.css";
 import BarChart from "./barchart";
 import { columnValues, tweetType,uniqueAuthors} from "../components/data";
 function Data() {
+  const background=[
+    'rgba(255, 26, 104, 0.5)',
+    'rgba(54, 162, 235, 0.5)',
+    'rgba(255, 206, 86, 0.5)',
+    'rgba(75, 192, 192, 0.5)',
+    'rgba(153, 102, 255, 0.5)',
+    'rgba(255, 159, 64, 0.5)',
+    'rgba(0, 0, 0, 0.5)'
+  ];
+  const border=[
+    'rgba(255, 26, 104, 1)',
+    'rgba(54, 162, 235, 1)',
+    'rgba(255, 206, 86, 1)',
+    'rgba(75, 192, 192, 1)',
+    'rgba(153, 102, 255, 1)',
+    'rgba(255, 159, 64, 1)',
+    'rgba(0, 0, 0, 1)'
+  ];
   const [openModal, setOpenModal] = useState(false);
   const handleClose = () => setOpenModal(false);
   const filteredColumns=columnValues.filter(obj=>obj.Count>0);
@@ -14,8 +32,8 @@ function Data() {
     datasets: [
       {
         label: "Tweets",
-        backgroundColor: "rgba(255, 99, 132,0.7)",
-        borderColor: "rgb(255, 255, 132)",
+        backgroundColor: background,
+        borderColor: border,
         borderWidth:1,
         data: filteredColumns.map((obj)=>{return obj.Count}),
       },
@@ -26,8 +44,8 @@ function Data() {
     datasets: [
       {
         label: "Tweets",
-        backgroundColor: ["red","yellow"],
-        borderColor: "rgb(255, 255, 132)",
+        backgroundColor: background,
+        borderColor: border,
         borderWidth:1,
         data: tweetType.map((obj)=>{return obj.Count}),
       },
@@ -38,8 +56,8 @@ function Data() {
     datasets: [
       {
         label: "Tweets",
-        backgroundColor: ["red","yellow"],
-        borderColor: "rgb(255, 255, 132)",
+        backgroundColor: background,
+        borderColor:border,
         borderWidth:1,
         data: uniqueAuthors.map((obj)=>{return obj.Count}),
       },
