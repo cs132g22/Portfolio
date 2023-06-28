@@ -55,3 +55,8 @@
   height: 100%;
   margin:auto;
 }
+.hed{
+  position: absolute;
+  top:0;
+  left: 0;
+}

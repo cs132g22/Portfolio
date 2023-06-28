@@ -8,9 +8,12 @@ import Methodology from "./NewSection/Methodology";
 import Overview from "./NewSection/Overview";
 import Results from "./NewSection/Results";
 import Data from "./NewSection/Data";
+import logs from "../src/utils/minimini.png"
 function App() {
   return (
     // <MediaQuery orientation="landscape" min-width={720}>
+    <>
+    <div className="hed"><img src={logs} alt="mini logo"/></div>
     <div className="section">
       <div className="upper">
         <div className="box">
@@ -60,6 +63,7 @@ function App() {
         </section>
       </div>
     </div>
+    </>
     // </MediaQuery>
   );
 }
