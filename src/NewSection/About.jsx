@@ -2,7 +2,7 @@ import Sources from "../components/Sources";
 import Tabs from "../components/tabs";
 import Vidad from "../utils/vidad.png";
 import Instrella from "../utils/instrella.jpeg";
-import Timbol from "../utils/placeholder.jpg";
+import Timbol from "../utils/Timbol.jpeg";
 import abt from "../components/about.png";
 import "../components/component.css";
 import { motion } from "framer-motion";
@@ -100,7 +100,8 @@ function About() {
               <div className="apic">
                 <img src={Instrella} alt="" />
                 <br />
-                <a href="mailto:reannumon123@gmail.com">Contact me</a>
+                <center>
+                <a href="mailto:reannumon123@gmail.com">Contact me</a></center>
               </div>
             </div>
 
@@ -109,25 +110,11 @@ function About() {
                 <h2>JOSH TIMBOL</h2>
                 <h5>CS 132 WFU, Lead Data Analyst</h5>
                 <p>
-                  enter any info here{" "}
-                  <a
-                    href="https://flutter.dev/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    flutter
-                  </a>{" "}
-                  and react.js.
-                  <br />
-                  Some of my Works are as listed
-                  <br />
+                A graduating BS Math student who has interest in Data Science. Also aspiring to be a better data analyst and software engineer, and be prepared for data science industry, a main motivation for taking CS 132.
+
                   <div className="Works">
                     <div className="work">
-                      <h6>WORK TITLE</h6>
-                      <p>short description</p>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        View Project
-                      </a>
+                      No Software Related works yet except this portfolio
                     </div>
                     {/*add more div work if needed, up to 3 only */}
                   </div>
@@ -136,7 +123,8 @@ function About() {
               <div className="apic">
                 <img src={Timbol} alt="" />
                 <br />
-                <a href="mailto:rttimbol@up.edu.ph">Contact me</a>
+                <center>
+                <a href="mailto:rttimbol@up.edu.ph">Contact me</a></center>
               </div>
             </div>
 
@@ -210,7 +198,8 @@ function About() {
               <div className="apic">
                 <img src={Vidad} alt="" />
                 <br />
-                <a href="mailto:jdvidad31@gmail.com">Contact me</a>
+                <center>
+                <a href="mailto:jdvidad31@gmail.com">Contact me</a></center>
               </div>
             </div>
 
@@ -224,7 +213,7 @@ function About() {
                 the purpose of finishing CS 132, but also for the search of the
                 truth in even the smallest fake news of today. We aim to
                 illuminate the truth and enhance the facts which in turn debunks
-                the fakes in today's social media.
+                the fakes in today's social media. For contacting, you can reach us individually by using the 'Contact Us' button in each tab.
               </div>
             </div>
           </Tabs>
