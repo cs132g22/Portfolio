@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { PersonalModal } from "../components/Modal";
 import React, {useState} from "react";
 import "./section.css";
+import logo from "../utils/logowhite.png"
 function About() {
   const [openModal, setOpenModal] = useState(false);
   const handleClose=()=>setOpenModal(false);
@@ -27,7 +28,7 @@ function About() {
       <Tabs>
         <div label="Instrella">
           <div className="information">
-            <h1>REANNU INSTRELLA</h1>
+            <h2>REANNU INSTRELLA</h2>
             <h5>CS 132, Tagavalidate ng data</h5>
             <p>
               enter any info here{" "}
@@ -62,7 +63,7 @@ function About() {
         </div>
         <div label="Timbol">
           <div className="information">
-            <h1>JOSH TIMBOL</h1>
+            <h2>JOSH TIMBOL</h2>
             <h5>CS 132, Tagahanap ng tweet</h5>
             <p>
               enter any info here{" "}
@@ -97,7 +98,7 @@ function About() {
         </div>
         <div label="Vidad" className="tabular">
           <div className="information">
-            <h1>JOHN DAVID A. VIDAD</h1>
+            <h2>JOHN DAVID A. VIDAD</h2>
             <h5>CS 132 WFW, Portfolio Manager</h5>
             <p>
               I am a currently a fourth year Computer Science undergraduate
@@ -167,8 +168,13 @@ function About() {
             <a href="mailto:jdvidad31@gmail.com">Contact me</a>
           </div>
         </div>
+        <div label='The Team'>
+              <div className="apic"><img src={logo} alt="logo"/></div>
+              <div className="cen"> We are the team ClearSight. This team was created not just with the purpose of finishing CS 132, but also for the search of the truth in even the smallest fake news of today.
+              We aim to illuminate the truth and enhance the facts which in turn debunks the fakes in today's social media. 
+        </div>
+              </div>
       </Tabs>
-      <Sources />
     </div>
     </PersonalModal>
     </>

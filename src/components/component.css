@@ -176,7 +176,6 @@ a{
     flex:0.7;
   }
   .tabs{
-	width: 80vw;
+	width: 100%;
 	align-self: center;
-	padding-left: 10vw;
   }

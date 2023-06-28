@@ -108,3 +108,7 @@
     overflow-y: hidden;
     overflow-x: auto;
   }
+  .cen{
+    margin: auto;
+    font-size: 1.5rem;
+  }
