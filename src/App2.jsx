@@ -8,7 +8,7 @@ import Methodology from "./NewSection/Methodology";
 import Overview from "./NewSection/Overview";
 import Results from "./NewSection/Results";
 import Data from "./NewSection/Data";
-import logs from "../src/utils/minimini.png"
+import logs from "../src/utils/logowithname.png"
 function App() {
   return (
     // <MediaQuery orientation="landscape" min-width={720}>
