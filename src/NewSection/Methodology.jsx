@@ -33,7 +33,7 @@ const handleClose=()=>setOpenModal(false);
               duration:0.2
             }
           }}
-          className="subsection white"><h3> Data Collection </h3>
+          className="whitesubsection"><h3> Data Collection </h3>
             <br/>
             For the Data Collection, a combination of manual webscrapping and automated webscrapping using snscraper, were done.
             A total of 200 tweets were collected, wherein, 100 have mis/disinformation, while the other 100 do not contain any mis/disinformation. 
@@ -49,7 +49,7 @@ const handleClose=()=>setOpenModal(false);
               duration:0.2
             }
           }}
-          className="subsection white">
+          className="whitesubsection">
             <br/>
             Initial processing of tweets include handling outliers and obtaining the central tendencies of interactions of tweets per category. Furthermore, the tweet words are filtered without url links, alt-texts and emojis to facilitate later analysis via topic clustering and/or statistical methods, such as Mann-Whitney U test, T-test for the different features in the dataset. For the engagement metrics, outliers are excluded from the statistical tests.<h3> Data Processing </h3>
           </motion.div>
@@ -64,7 +64,7 @@ const handleClose=()=>setOpenModal(false);
               duration:0.2
             }
           }}
-          className="subsection white">
+          className="whitesubsection">
             <h3> Statistical Testing</h3>
             
             <br/>
@@ -86,7 +86,7 @@ const handleClose=()=>setOpenModal(false);
               duration:0.2
             }
           }}
-          className="subsection white">
+          className="whitesubsection">
               <h2> Machine Learning</h2>
               <p>
               To obtain supporting details for the hypothesis question, topic clustering model is used on tweets automatically translated and preprocessed to determine the most common topics, clusters on both tweets with and without misinformation that are in favor of the anti-terror law.

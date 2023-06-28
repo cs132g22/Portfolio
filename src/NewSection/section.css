@@ -126,3 +126,10 @@
   .ml img{
     width: 100%;
   }
+  .whitesubsection{
+    border:3px solid black;
+    margin:1%;  
+    padding: 1%;
+    border-radius: 1vw;
+    color:black;
+  }
